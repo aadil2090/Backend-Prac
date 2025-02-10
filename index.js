@@ -19,6 +19,15 @@ app.get("/youtube", (req, res) => {
   res.send("<h3>Hello from Youtube</h3>");
 });
 
+app.get("/github", (req, res) => {
+  res.json({
+    name: "Test",
+    message: "Hello World!",
+    count: 0,
+    status: true,
+  });
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`);
 });
